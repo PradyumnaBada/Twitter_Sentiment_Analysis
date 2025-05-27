@@ -56,8 +56,6 @@ The primary goal is to build a model that can accurately distinguish tweets desc
 
 ## 📊 Results and Performance
 
-The notebook evaluates several baseline models with different text vectorization techniques. Key accuracy results are:
-
 * **Multinomial Naive Bayes:**
     * With Bag of Words (BoW):
         * Validation accuracy: 0.768
@@ -86,7 +84,6 @@ The notebook evaluates several baseline models with different text vectorization
     * With TF-IDF:
         * Validation accuracy: 0.764
         * Training accuracy: 0.988
-    * The notebook also shows an attempt to run Random Forest with GloVe embeddings, but the accuracy results for this specific combination are not explicitly printed in the final part of the cell.
 * **Simple Neural Network (PyTorch with GloVe):**
     * The training and validation losses are plotted across 100 epochs, showing the learning process. The training accuracy was 0.98, and the validation accuracy was 0.78.
 
