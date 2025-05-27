@@ -88,7 +88,7 @@ The notebook evaluates several baseline models with different text vectorization
         * Training accuracy: 0.988
     * The notebook also shows an attempt to run Random Forest with GloVe embeddings, but the accuracy results for this specific combination are not explicitly printed in the final part of the cell.
 * **Simple Neural Network (PyTorch with GloVe):**
-    * The training and validation loss are plotted across 100 epochs, showing the learning process. The specific final accuracy metrics are not printed as a single number but can be inferred from the loss plot's trend. The validation loss generally decreases and then plateaus/slightly increases, indicating the model learned but might have started to overfit or reached its capacity.
+    * The training and validation losses are plotted across 100 epochs, showing the learning process. The training accuracy was 0.98, and the validation accuracy was 0.78.
 
 **Summary of Best Performance (among baselines tested):**
 Logistic Regression with GloVe embeddings (both initial and after GridSearchCV) showed the highest validation accuracy around 0.810 - 0.811. Traditional methods like BoW and TF-IDF with Logistic Regression and Naive Bayes also performed reasonably well, with validation accuracies generally in the range of 0.76 to 0.79.
@@ -116,4 +116,3 @@ Logistic Regression with GloVe embeddings (both initial and after GridSearchCV) 
     * The notebook originally uses: `/content/drive/MyDrive/CS_441_final_project/`
 4.  **Run Notebook:** Execute the Jupyter notebook cells sequentially.
 
-**Note:** The notebook mentions plans for more advanced models like BERT and RoBERTa, suggesting that the preprocessing for the baseline models was kept relatively simple for comparison purposes.
